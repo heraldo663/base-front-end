@@ -5,12 +5,16 @@
   "main": "js/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:scss": "node-sass -w scss/style.scss css/pre.css",
-    "watch:postcss": "postcss css/pre.css -o css/style.css -w",
+    "watch:scss": "node-sass -w src/scss/style.scss src/css/pre.css",
+    "watch:postcss": "postcss src/css/pre.css -o dist/css/style.css -w",
     "dev:css": "concurrently \"npm run watch:scss arg\" \"npm run watch:postcss\""
   },
   "author": "Heraldo Ecard Roque Filho",
   "license": "ISC",
+  "browserslist": "> 0.25%, not dead",
+  "presets": [
+    "@babel/preset-env"
+  ],
   "devDependencies": {
     "autoprefixer": "^9.3.1",
     "concurrently": "^4.1.0",
