@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const rename = require('gulp-rename');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
@@ -49,6 +50,10 @@ function postCss() {
     ];
     return gulp.src(paths.styles.src)
         .pipe(postcss(plugins))
+        .pipe(rename({
+            basename: 'main',
+            suffix: '.min'
+        }))
         .pipe(gulp.dest(paths.styles.dest));
 
 };
