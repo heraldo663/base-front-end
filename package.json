@@ -4,14 +4,12 @@
   "description": "Basic front end Setup",
   "main": "js/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "gulp clean",
     "sass": "gulp sass",
     "css": "gulp css",
     "scripts": "gulp scripts",
     "build": "gulp",
-    "dev": "gulp watch",
-    "web": "webpack"
+    "dev": "gulp watch"
   },
   "author": "Heraldo Ecard Roque Filho",
   "license": "ISC",
