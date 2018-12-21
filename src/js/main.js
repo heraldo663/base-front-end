@@ -1,5 +1,3 @@
-import Teste from "./modules/test";
-
 function ready(fn) {
   if (
     document.attachEvent
@@ -13,8 +11,7 @@ function ready(fn) {
 }
 
 function main() {
-  console.log("test");
-  new Teste();
+
 }
 
 ready(main);
